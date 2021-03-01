@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+
+<bean id="p1" class="info.inetsolv.beans.Student" abstract="true">
+<property name="fatherName" value="Ram"/>
+<property name="motherName" value="Sita"/>
+</bean>
+
+<bean id="s1" class="info.inetsolv.beans.Student" parent="p1">
+<property name="sid" value="111"/>
+<property name="name" value="lav"/>
+</bean>
+
+<bean id="s2" class="info.inetsolv.beans.Student" parent="p1">
+<property name="sid" value="222"/>
+<property name="name" value="Kush"></property>
+</bean>
+
+</beans>
